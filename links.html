@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Links</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+			
+</head>
+<body class="loaded">
+<style>
+	.main-links .wrapper {max-width: 1200px;padding: 40px;margin: 0 auto;}
+	.main-links ul {list-style: none; margin: 0; padding: 0;}
+	.main-links li 	{margin-bottom: 10px;}
+	.main-links a {color: #333;font-size: 16px;line-height: 20px; text-decoration: underline;}
+	.main-links a:hover {color: #333;text-decoration: none;}
+	.main-links h2 {width: 100%;font-size: 30px;line-height: 60px;color: #333;}
+</style>
+
+<div class="main-wrapper">
+	<div class="main main-links">
+		<div class="wrapper">
+			
+			<h2>Ссылки</h2>
+			<div class="ul-wrap">
+				<ul>
+					<li><a href="index.html">Главная </a></li>
+					<li><a href="news.html">Новости </a></li>
+					<li><a href="article.html">Страница контента </a></li>
+					<li><a href="reference.html">Справочная информация </a></li>
+					<li><a href="reviews.html">Отзывы </a></li>
+					<li><a href="services.html">Разделы каталога </a></li>
+					<li><a href="contacts.html">Контакты </a></li>
+				</ul>
+				
+			</div>
+
+			<h2>Попап</h2>
+			<div class="ul-wrap">
+				<ul>
+					<li><a href="#popup-callback" class="open-popup-link">Оставьте заявку!</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div id="popup-callback" class="popup mfp-hide">
+	
+	<h2 class="popup__title ">Оставьте заявку!</h2>
+	<p><strong>Оставьте заявку и получите БЕСПЛАТНУЮ консультацию!</strong></p>
+
+	<form action="#">
+		<div class="form-field form-field--icon">
+			<input type="text" class="form-input form-input--light" placeholder="Ваше имя">
+			<div class="form-icon">
+				<svg class="icon icon-person"><use xlink:href="img/sprite.svg#person"></use></svg>
+			</div>
+		</div>
+		<div class="form-field form-field--icon">
+			<input type="tel" class="form-input form-input--light tel" placeholder="Ваш телефон">
+			<div class="form-icon">
+				<svg class="icon icon-phone"><use xlink:href="img/sprite.svg#phone"></use></svg>
+			</div>
+		</div>
+		<div class="form-field">
+			<label class="checkbox">
+				<input type="checkbox" checked="">
+				<span class="checkbox__figure"></span>
+				<span class="checkbox__text">Согласен с политикой обработки персональных данных</span>
+			</label>
+		</div>
+		<input type="submit" class="btn btn--block" value="Заказать звонок">
+	</form>
+	
+</div>
+
+<div id="popup-thanks" class="popup mfp-hide">
+	<h2 class="popup__title ">Заявка успешно отправлена!</h2>
+</div>
+<div class="icon-load">
+	<div class="ball a"></div>
+	<div class="ball b"></div>
+	<div class="ball c"></div>
+</div>
+<script src="js/all.js"></script>
+</body>
+</html>
